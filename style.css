@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8ab4e;
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+p {
+  color: rgb(219, 219, 219);
+}
+
+#container {
+  width: 70%;
+  height: 80%;
+  overflow: scroll;
+  scrollbar-width: none;
+  position: relative;
+  background-color: #040404;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: aliceblue;
+  box-shadow: 0 60px 60px rgba(15, 15, 15, 0.3);
+  scroll-padding-top: 60px;
+}
+#head {
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  padding: 10px 40px;
+  background-color: #040404;
+  backdrop-filter: blur(5px);
+}
+#Navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navChild1 {
+  margin-right: auto;
+}
+#navChild2 {
+  display: flex;
+  gap: 20px;
+}
+#logo {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+#logo:hover {
+  transition: all 0.4s ease-in;
+  border-bottom: 2px solid #d8ab4e;
+}
+#logo span {
+  color: rgba(216, 171, 78, 0.9);
+}
+.Insidechild2 {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+.Insidechild2:hover,
+.Insidechild2:active {
+  color: #d8ab4e;
+  scale: 1.04;
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid #d8ab4e;
+}
+#Maincard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  animation: move 1s 1 ease-in-out;
+}
+.infoCards {
+  width: 80%;
+  height: 400px;
+  /* box-shadow: 0 0 9px grey; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.infoCardsChild {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+#profileImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw42D5Z6zG1R0eiEC8NHE33O-B9e87I55Z7F_fGIQ8-lXVklXq4PvGiqAa&s=10);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about p {
+  font-size: 17px;
+  color: rgb(235, 234, 234);
+}
+#homeInfo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+#homeInfo h1 span {
+  color: #df5b30;
+}
+#aboutInfo {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#aboutInfoChild1 h1 {
+  width: 300px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#aboutInfoChild2 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#aboutInfoChild2 a{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#aboutInfoChild2 a {
+  color: #d8ab4e;
+  text-decoration: underline;
+  font-size: 20px;
+}
+#aboutInfoChild2 a:hover {
+  color: #df5b30;
+  text-decoration: underline;
+}
+#skillsChild1 {
+  width: 40%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#skillsChild2 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  gap: 10px;
+}
+#skillsChild2 ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+#skillsChild2 ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#skillsChild2 li i {
+  color: #df5b30;
+  font-size: 50px;
+}
+#projectTitle {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#projectsContainer {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  gap: 10px;
+}
+.projectCard {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+  box-shadow: 1px 1px 5px #a9a2e2;
+  border-radius: 10px;
+}
+.projectCard h2 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projectInfo {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.exploreBtn {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.exploreBtn a {
+  width: 75px;
+  height: 100%;
+  background-color: rgba(37, 99, 235, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+.exploreBtn a:hover {
+  scale: 1.05;
+  background-color: #d8ab4e;
+  color: black;
+  font-weight: bold;
+}
+#education {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+}
+#educationContainer {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+#educationCard {
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 1px 2px 5px #a9a2e2;
+  border-radius: 10px;
+}
+#educationPicture {
+  width: 50%;
+  height: 100%;
+  background-image: url(https://img.magnific.com/premium-photo/education-knowledge_820340-74891.jpg?semt=ais_test_b&w=740&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 2px 5px #a9a2e2;
+  border-radius: 10px;
+}
+#contact {
+  display: flex;
+  gap: 20px;
+}
+#contactInfo {
+  width: 40%;
+  height: 50%;
+  box-shadow: 1px 2px 5px #a9a2e2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#contactInfo a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding-left: 20px;
+}
+#contactInfo i {
+  color: #df5b30;
+}
+#contactInfo i:hover {
+  color: #d8ab4e;
+}
+#contactInfo a:hover {
+  color: #25eb7e;
+  text-decoration: underline;
+}
+
+#footerCard {
+  width: 100%;
+  height: 60px;
+  background-color: #0e0e10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
