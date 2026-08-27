@@ -29,12 +29,12 @@ p {
   scrollbar-width: none;
   position: relative;
   background-color: #040404;
-  border: 2px solid black;
   border-radius: 10px;
   color: aliceblue;
   box-shadow: 0 60px 60px rgba(15, 15, 15, 0.3);
   scroll-padding-top: 65px;
 }
+
 #head {
   width: 100%;
   height: 60px;
@@ -83,6 +83,7 @@ p {
   transition: 0.2s ease-in;
   border-bottom: 2px solid #d8ab4e;
 }
+
 #Maincard {
   width: 100%;
   display: flex;
@@ -153,12 +154,11 @@ p {
 }
 #aboutInfoChild2 {
   width: 100%;
-  height: 30%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-#aboutInfoChild2 a{
+#aboutInfoChild2 a {
   width: 100%;
   height: 20%;
   display: flex;
@@ -174,6 +174,7 @@ p {
   color: #df5b30;
   text-decoration: underline;
 }
+
 #skillsChild1 {
   width: 40%;
   height: 30%;
@@ -251,7 +252,7 @@ p {
   justify-content: center;
   padding: 5px;
 }
-.projectInfo p{
+.projectInfo p {
   font-size: 14px;
 }
 .exploreBtn {
@@ -357,5 +358,160 @@ p {
   }
   100% {
     transform: translate(0);
+  }
+}
+@media (min-height: 709px) {
+  #container {
+    width: 60%;
+    height: 57%;
+  }
+}
+@media (max-width: 1349px) {
+  #skillsChild2 li {
+    font-size: 0.62rem;
+  }
+  #skillsChild2 li i {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 1060px) {
+  #skillsChild2 li i {
+    font-size: 2rem;
+  }
+  #skillsChild2 li {
+    font-size: 0.42rem;
+  }
+  #contactInfo a {
+    font-size: 1.3rem;
+  }
+  #contactInfo {
+    width: 200px;
+  }
+}
+@media (max-width: 987px) {
+  #container {
+    width: 70%;
+  }
+  #logo {
+    font-size: 1.3rem;
+  }
+  .Insidechild2 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 866px) {
+  #logo {
+    font-size: 0.9rem;
+  }
+  .Insidechild2 {
+    font-size: 0.5rem;
+  }
+  #profileImg {
+    width: 200px;
+    height: 200px;
+  }
+  #homeInfo {
+    font-size: 0.5rem;
+  }
+  #aboutInfoChild2 p {
+    font-size: 0.5rem;
+  }
+  #skillsChild2 li {
+    font-size: 0.5rem;
+  }
+  #skillsChild2 li i {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 743px) {
+  #skillsChild2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #skillsChild2 li {
+    font-size: 0.3rem;
+  }
+  #skillsChild2 li i {
+    font-size: 1rem;
+  }
+  #contactInfo a {
+    font-size: 1rem;
+  }
+  #footerCard p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #container {
+    width: 80%;
+    height: 45%;
+    scroll-padding-top: 60px;
+  }
+  #head {
+    padding: 9px;
+  }
+  #navChild2 {
+    display: flex;
+    gap: 10px;
+  }
+  .infoCards {
+    width: 80%;
+    height: 300px;
+  }
+  #profileImg {
+    width: 150px;
+    height: 150px;
+  }
+  #homeInfo {
+    width: 40%;
+    height: 80%;
+  }
+  #homeInfo h1 {
+    font-size: 0.7rem;
+  }
+  #homeInfo p {
+    font-size: 0.4rem;
+  }
+  #aboutInfoChild2 a {
+    font-size: 0.7rem;
+  }
+  #skillsChild2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #skillsChild2 li {
+    font-size: 0.5rem;
+  }
+  #skillsChild2 li i {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 434px) {
+  #container {
+    width: 90%;
+    height: 35%;
+  }
+
+  #head {
+    padding: 9px;
+  }
+  #navChild2 {
+    display: flex;
+    gap: 10px;
+  }
+  #aboutInfoChild2 p {
+    font-size: 0.4rem;
+  }
+  .infoCards {
+    width: 80%;
+    height: 250px;
+  }
+  #profileImg {
+    width: 150px;
+    height: 150px;
   }
 }
