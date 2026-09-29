@@ -23,7 +23,7 @@ p {
 }
 
 #container {
-  width: 70%;
+  width: 90%;
   height: 80%;
   overflow: scroll;
   scrollbar-width: none;
@@ -362,11 +362,15 @@ p {
 }
 @media (min-height: 709px) {
   #container {
-    width: 60%;
+    width: 88%;
     height: 57%;
   }
 }
 @media (max-width: 1349px) {
+   #container {
+    width: 90%;
+    height: 90%;
+  }
   #skillsChild2 li {
     font-size: 0.62rem;
   }
@@ -390,7 +394,7 @@ p {
 }
 @media (max-width: 987px) {
   #container {
-    width: 70%;
+    width: 90%;
   }
   #logo {
     font-size: 1.3rem;
