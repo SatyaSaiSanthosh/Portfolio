@@ -369,7 +369,7 @@ p {
 @media (max-width: 1349px) {
    #container {
     width: 90%;
-    height: 90%;
+    height: 80%;
   }
   #skillsChild2 li {
     font-size: 0.62rem;
